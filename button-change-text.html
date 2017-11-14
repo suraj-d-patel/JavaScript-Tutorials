@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>index</title>
+</head>
+<body>
+<p> We are going to change the text using button </p>
+<p id="target"> I am going to visit Microsoft soon...</p>
+<button onclick="change()"> Just Change it</button>
+<script>
+function change(){
+	var str = document.getElementById("target").innerHTML;
+	var str1= str.replace("Microsoft","Google");
+	document.getElementById("target").innerHTML=str1;
+	}
+	
+</script>
+</body>
+</html>
