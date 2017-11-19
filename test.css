@@ -1,0 +1,8 @@
+.cssclass1{color:red;}
+#cssid{color:blue;}
+p.cssclass2{color:pink;}
+p[name="name1"]{color:yellow;}
+p[name="name3"]{color:green;}
+p[name^="hello"]{color:orange;}
+p[name*="hello"]{color:magenta;}
+p[name$="hello"]{color:indigo;}

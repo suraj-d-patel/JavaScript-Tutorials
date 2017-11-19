@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.1</title>
+</head>
+<body>
+<script>
+var today=new Date();
+var date=today.getDate();
+var month=today.getMonth();
+var year=today.getFullYear();
+var day=today.getDay();
+var hours = today.getHours();
+var minutes= today.getMinutes();
+var seconds= today.getSeconds();
+var prepand=(hours>=12)? " PM ":" AM ";
+hours=(hours>=12)?hours:hours-12;
+
+if(hours===0&&minutes===0)
+{
+	if(seconds===0&&prepand==='PM')
+	{
+		hours=12;
+		prepand=" Noon ";
+	}
+	else{ hours=12;
+		  prepand="PM"	}
+}
+
+if(hours===0&&minutes===0)
+{
+	if(seconds===0&&prepand==='AM')
+	{
+		hours=12;
+		prepand=" MidNight ";
+	}
+	else{ hours=12;
+		  prepand="AM"	}
+}
+
+
+document.write("Current Time is "+ hours+" : "+minutes+" : " + seconds+" " +prepand);
+document.write("<br>"+"Today is "+date+"/"+month+"/"+year);
+</script>
+</body>
+</html>

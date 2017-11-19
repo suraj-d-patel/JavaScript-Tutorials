@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.11</title>
+</head>
+<body>
+
+<form>
+Celsius <input type="text" id="c1" />
+
+<input type="button" onclick="fromctof()" value="Fahrenheit">
+
+<p>The Temperature in Fahrenheit is: <span id ="result"></span></p>
+
+</form>
+
+
+<form>
+Fahrenheit <input type="text" id="c2" />
+
+<input type="button" onclick="fromftoc()" value="Celsius">
+
+<p>The Temperature in Celsius is: <span id ="resultant"></span></p>
+
+</form>
+
+<script>
+function fromctof()
+{
+	var celsius=document.getElementById("c1").value;
+	var Fahrenheit=32+(9*celsius)/5;
+	document.getElementById("result").innerHTML=Fahrenheit;
+}
+
+function fromftoc()
+{
+	var Fahrenheit=document.getElementById("c2").value;
+	var celsius=5*(Fahrenheit-32)/9;
+	document.getElementById("resultant").innerHTML=celsius;
+}
+
+//c/5 = (f-32)/9
+</script>
+</body>
+</html>

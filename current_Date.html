@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.3</title>
+</head>
+<body>
+<script>
+
+var today=new Date();
+var date=today.getDate();
+var month=today.getMonth()+1;
+var year = today.getFullYear();
+
+if(date<10)
+{date='0'+date;}
+if(month<10)
+{month='0'+month;}
+
+document.write(date +"/"+month+"/"+year+"<br />");
+document.write(month +"-"+date+"-"+year+"<br />");
+document.write(month +"/"+date+"/"+year+"<br />");
+document.write(date+"-"+month+"-"+year);
+
+</script>
+</body>
+</html>

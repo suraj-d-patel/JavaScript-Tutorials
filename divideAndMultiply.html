@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.10</title>
+</head>
+<body>
+<form>
+1st Number <input type="text" id="num1"><br />
+2nd Number <input type="text" id="num2">
+<input type="button" onclick=multiply() value="Multiply"> </button>
+<input type="button" onclick=divide() value="Divide">  </button>
+<p> The Result is: 
+<span id="result"></span></p>
+</form>
+
+
+<script>
+function multiply(){
+	document.getElementById("result").innerHTML=document.getElementById("num1").value*document.getElementById("num2").value;
+//document.write(sum);
+}
+function divide(){
+	document.getElementById("result").innerHTML=document.getElementById("num1").value/document.getElementById("num2").value;
+
+}
+
+</script>
+</body>
+</html>

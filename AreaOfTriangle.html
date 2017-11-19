@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.4</title>
+</head>
+<body>
+<script>
+
+var num1=prompt("Enter first side of Triangle","0");
+var num2=prompt("Enter second side of Triangle","0");
+var num3=prompt("Enter third side of Triangle","0");
+var a=parseInt(num1);
+var b=parseInt(num2);
+var c=parseInt(num3);
+var sum=(a+b+c)/2;
+
+var semi = sum*(sum-a)*(sum-b)*(sum-c);
+var area=Math.sqrt(semi);
+document.write("Area of Triangle with Sides "+ a+","+b+" and "+c+" is "+area);
+</script>
+</body>
+</html>

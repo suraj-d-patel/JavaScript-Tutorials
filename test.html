@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">                          <!-- Language of tags in english -->
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="test.css" />        <!-- Connects HTML to CSS -->
+<title> Second Webpage </title>
+</head>
+<body>
+	<p class="cssclass1"> Statement 1 </p>  <!-- class is envoked by .classname or  tag.classname -->
+	<p class="cssclass2"> Statement 2 </p> 
+	<p id="cssid">       Statement 3 </p>  <!-- id is envoked by #idname -->
+	   
+	<!-- name is envoked by EITHER writing tag[NAME of name] if you want all the attributes with same name have same property OR writing tag[NAME of name="name"] if you want only the attributes with specific name have that specific property -->
+	
+	<p name="name1"> Statement 4 </p>
+	<p name="name2"> Statement 5 </p>
+	<p name="name3"> Statement 6 </p>
+	
+	<p name="hellogeek">hello at the starting</p>    <!-- name is envoked by tag[name^="texttobesearched"] -->
+	<p name="heygeekyhello">hello in the end</p>   <!-- name is envoked by tag[name$="texttobesearched"] -->
+	<p name="heyhellogeek">hello somewhere in the statement</p>    <!-- name is envoked by tag[name*="texttobesearched"] -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.6</title>
+</head>
+<body>
+<script>
+
+var year=prompt("Enter the year");
+if(year%4==0){
+	if(year%100==0){
+		if(year%400==0){leap();}
+		else{ notleap();}
+	}
+	else{leap();}
+}
+else{notleap();}
+
+
+
+
+function leap(){
+	document.write("Year "+year+" is a Leap Year");
+}
+function notleap(){
+	document.write("Year "+year+" is NOT a Leap Year");
+}
+</script>
+</body>
+</html>

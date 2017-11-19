@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<title> exercise 1.9</title>
+</head>
+<body>
+<script>
+var today=new Date();
+var xmas=new Date(today.getFullYear(),11,25);
+if(today.getMonth===11&&today.getDate>25)
+{
+	xmas.setFullYear(xmas.getFullYear()+1);
+}
+var One_Day=24*60*60*1000;
+document.write(Math.floor((xmas.getTime()-today.getTime())/One_Day)+1);
+</script>
+</body>
+</html>
