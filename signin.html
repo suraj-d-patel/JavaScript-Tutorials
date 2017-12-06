@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta charset=utf-8>
+<title> SurajSpeaks-Signin</title>
+<style>
+	#invalid1{
+		color:red;
+		position:absolute;
+		top:48px;
+		left:795px;
+	}
+	
+	#invalid2{
+		color:red;
+		position:absolute;
+		top:71px;
+		left:795px;
+	}
+	
+	#invalid3{
+		color:red;
+		position:absolute;
+		top:94px;
+		left:805px;
+	}
+
+
+</style>
+</head>
+<body>
+<h2> Signin here to get free access</h2>
+
+<form name="signin" align="center" action="mailto:abc@xyz.com" method="post" onsubmit="return validate()"><fieldset>
+Name  <input type=text id=name /><br/>
+Email  <input type=text id=email /><br/>
+Password  <input type=password id=password /><br/>
+<input type=submit />   <input type=reset /><br/> </fieldset>
+</form>
+<script>
+var invalid=0;
+function validate(){
+	invalid=0;
+	//Name Check
+	if(document.getElementById("name").value==""){
+	document.getElementById("invalid1").innerHTML= "Name cannot be Blank";
+	invalid++;
+	}
+	else {
+		document.getElementById("invalid1").innerHTML=" ";
+	}
+	
+	//Email Check
+	if(document.getElementById("email").value.indexOf("@")==-1){
+	document.getElementById("invalid2").innerHTML= " Enter the valid E-Mail";
+	invalid++;
+	}
+	else {
+		document.getElementById("invalid2").innerHTML=" ";
+	}
+	
+	//Password check
+	 if(document.getElementById("password")@@@Condition@@@){
+	document.getElementById("invalid3").innerHTML= " Password must contain UpperCase and LowerCase Letters";
+	invalid++;
+	}
+	else {
+		document.getElementById("invalid3").innerHTML=" ";
+	}
+	
+	
+	//Main Check
+	if (invalid != 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+</script>
+<p id="invalid1"></p>
+<p id="invalid2"></p>
+<p id="invalid3"> </p>
+</body>
+</html>
